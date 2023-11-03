@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奮起湖一品香點餐系統</title>
+    <style>
+        h2{
+            text-align: center;
+            color:rgb(32, 53, 244);
+            background-color: rgb(244, 128, 4);
+            width: 100%;
+            height: 40px;
+        }
+        body{
+            margin: 0%;
+        }
+        @media(max-width:450px){
+            h2{
+                text-align: center;
+                color:rgb(32, 53, 244);
+                background-color: rgb(244, 128, 4);
+                width: 500px;
+                height: 60px;
+            }
+            body{
+                font-size :20px;
+            }
+            table{
+                font-size :15px;
+            }
+        }
+        @media(max-width:400px){
+            h2{
+                text-align: center;
+                color:rgb(32, 53, 244);
+                background-color: rgb(244, 128, 4);
+                width: 500px;
+                height: 60px;
+            }
+            body{
+                font-size :30px;
+            }
+            table{
+                font-size :25px;
+            }
+        }
+    </style>
+
+</head>
+<body style="background-color:rgba(150, 227, 241, 0.607)">
+    <h2>一品香點餐系統</h1>
+    <form action="">
+        <label for="table">桌號:</label>
+        <input type="text" id="table" name="table"><br><br>
+    </form>
+    <p>餐點:</p>
+
+    <form action="">
+        <table  width="450" border=1>
+            <tr>
+                <th width="250">餐點</th>
+                <th width="150">數量</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="meal-1" id="meal-1" style="font-size :20px;">
+                        <option value="0">請選擇餐點</option>
+                        <optgroup label="飯麵類">飯麵類</optgroup>
+                        <option value="白飯">白飯 $10</option>
+                        <option value="炒麵">炒麵 $70</option>
+                        <option value="蛋炒飯">蛋炒飯 $70</option>
+                        <option value="茶油麵線">茶油麵線 $70</option>
+                        <optgroup label="火鍋類">火鍋類</optgroup>
+                        <option value="羊肉爐大">羊肉爐(大) $500</option>
+                        <option value="羊肉爐小">羊肉爐(小) $400</option>
+                        <option value="什錦火鍋大">什錦火鍋(大) $500</option>
+                        <option value="什錦火鍋小">什錦火鍋(小) $400</option>
+                        <option value="山豬肉爐大">山豬肉爐(大) $500</option>
+                        <option value="山豬肉爐小">山豬肉爐(小) $400</option>
+                        <option value="泡菜鍋大">泡菜鍋(大) $500</option>
+                        <option value="泡菜鍋小">泡菜鍋(小) $400</option>
+                        <option value="迷你鍋">迷你鍋 $250</option>
+                        <optgroup label="湯類">湯類</optgroup>
+                        <option value="金針肉絲湯大">金針肉絲湯(大) $150</option>
+                        <option value="金針肉絲湯小">金針肉絲湯(小) $60</option>
+                        <option value="香菇肉絲湯大">香菇肉絲湯(大) $150</option>
+                        <option value="香菇肉絲湯小">香菇肉絲湯(小) $60</option>
+                        <option value="轎蒿筍湯大">轎蒿筍湯(大) $150</option>
+                        <option value="轎蒿筍湯小">轎蒿筍湯(小) $60</option>
+                        <optgroup label="蔬菜類">蔬菜類</optgroup>
+                        <option value="高麗菜大">高麗菜(大) $150</option>
+                        <option value="高麗菜小">高麗菜(小) $120</option>
+                        <option value="轎蒿筍大">轎蒿筍(大) $150</option>
+                        <option value="轎蒿筍小">轎蒿筍(小) $120</option>
+                        <option value="山芹菜大">山芹菜(大) $150</option>
+                        <option value="山芹菜小">山芹菜(小) $120</option>
+                        <option value="龍鬚菜大">龍鬚菜(時令)(大)$150</option>
+                        <option value="龍鬚菜小">龍鬚菜(時令)(小)$120</option>
+                        <option value="芥藍菜大">芥藍菜(時令)(大)$150</option>
+                        <option value="芥藍菜小">芥藍菜(時令)(小)$120</option>
+                        <option value="鮮炒香菇大">鮮炒香菇(大)$200</option>
+                        <option value="鮮炒香菇小">鮮炒香菇(小)$150</option>
+                        <option value="丁香炒山蘇大">丁香炒山蘇(大)$200</option>
+                        <option value="丁香炒山蘇小">丁香炒山蘇(小)$150</option>
+                        <option value="香脆荷蘭豆大">香脆荷蘭豆(時令)(大)$200</option>
+                        <option value="香脆荷蘭豆小">香脆荷蘭豆(時令)(小)$150</option>
+                        <optgroup label="特產類">特產類</optgroup>
+                        <option value="紅燒豆腐大">紅燒豆腐(大)$150</option>
+                        <option value="紅燒豆腐小">紅燒豆腐(小)$120</option>
+                        <option value="山葵豆腐大">山葵豆腐(大)$150</option>
+                        <option value="山葵豆腐小">山葵豆腐(小)$120</option>
+                        <option value="麻婆豆腐大">麻婆豆腐(大)$150</option>
+                        <option value="麻婆豆腐小">麻婆豆腐(小)$120</option>
+                        <option value="山羌肉大">山羌肉(大)$350</option>
+                        <option value="山羌肉小">山羌肉(小)$250</option>
+                        <option value="山羊肉大">山羊肉(大)$350</option>
+                        <option value="山羊肉小">山羊肉(小)$250</option>
+                        <option value="洋蔥牛肉大">洋蔥牛肉(大)$350</option>
+                        <option value="洋蔥牛肉小">洋蔥牛肉(小)$250 </option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <td align="center">
+                    <input type="text" id="quantity1" name="quantity1" style="font-size :13px;">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
